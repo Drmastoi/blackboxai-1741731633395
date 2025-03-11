@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - VisitingDoctor.co.uk</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-hospital-user text-3xl text-blue-600 mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">VisitingDoctor</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="services.html" class="text-blue-600 font-semibold">Services</a>
+                    <a href="doctors.html" class="text-gray-600 hover:text-blue-600">Doctors</a>
+                    <a href="appointment.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Book Appointment</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+                
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-600 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden md:hidden pb-4">
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-blue-600 font-semibold">Services</a>
+                <a href="doctors.html" class="block py-2 text-gray-600 hover:text-blue-600">Doctors</a>
+                <a href="appointment.html" class="block py-2 text-blue-600 font-semibold">Book Appointment</a>
+                <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-blue-50 to-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Our Medical Services
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Comprehensive healthcare solutions delivered to your doorstep
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1: Home Visits -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-6">
+                        <i class="fas fa-home text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Home Visits</h3>
+                    <p class="text-gray-600 mb-4">
+                        Experience professional medical care in the comfort of your home. Our qualified doctors are available 24/7 for house calls.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>24/7 availability</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Qualified doctors</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Comprehensive examinations</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Prescription services</li>
+                    </ul>
+                    <a href="appointment.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Book Now</a>
+                </div>
+
+                <!-- Service 2: Online Consultations -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-6">
+                        <i class="fas fa-laptop-medical text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Online Consultations</h3>
+                    <p class="text-gray-600 mb-4">
+                        Connect with our experienced doctors through secure video consultations from anywhere, anytime.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Secure platform</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Flexible scheduling</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Digital prescriptions</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Follow-up care</li>
+                    </ul>
+                    <a href="appointment.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Book Now</a>
+                </div>
+
+                <!-- Service 3: Emergency Care -->
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-6">
+                        <i class="fas fa-heartbeat text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Emergency Care</h3>
+                    <p class="text-gray-600 mb-4">
+                        Quick response emergency medical services with experienced healthcare professionals available 24/7.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Rapid response</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Emergency treatment</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Hospital coordination</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Ambulance service</li>
+                    </ul>
+                    <a href="appointment.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Additional Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-notes-medical text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Health Check-ups</h3>
+                    <p class="text-gray-600">Comprehensive health assessments and preventive care services.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-prescription-bottle-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Prescription Services</h3>
+                    <p class="text-gray-600">Quick and convenient prescription writing and medication delivery.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-user-md text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Specialist Referrals</h3>
+                    <p class="text-gray-600">Direct access to our network of specialist consultants.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-file-medical text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Medical Certificates</h3>
+                    <p class="text-gray-600">Official medical documentation for work or travel purposes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-plus text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Book Appointment</h3>
+                    <p class="text-gray-600">Schedule your appointment online or via phone</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-md text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Doctor Visit</h3>
+                    <p class="text-gray-600">Our qualified doctor visits you at home</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-stethoscope text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Consultation</h3>
+                    <p class="text-gray-600">Receive thorough medical consultation</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-medical text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Treatment Plan</h3>
+                    <p class="text-gray-600">Get personalized treatment and follow-up care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Book a Service?</h2>
+            <p class="text-xl text-blue-100 mb-8">Schedule an appointment now and get the care you need</p>
+            <a href="appointment.html" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+                Book Appointment
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">VisitingDoctor</h3>
+                    <p class="mb-4">Quality healthcare at your doorstep, available 24/7 for your medical needs.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white">Services</a></li>
+                        <li><a href="doctors.html" class="hover:text-white">Our Doctors</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Home Visits</a></li>
+                        <li><a href="#" class="hover:text-white">Online Consultation</a></li>
+                        <li><a href="#" class="hover:text-white">Emergency Care</a></li>
+                        <li><a href="#" class="hover:text-white">Specialist Referrals</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+441234567890" class="hover:text-white">+44 123 456 7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:info@visitingdoctor.co.uk" class="hover:text-white">info@visitingdoctor.co.uk</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            123 Healthcare Street, London, UK
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2024 VisitingDoctor.co.uk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
