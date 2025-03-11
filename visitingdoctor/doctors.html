@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - VisitingDoctor.co.uk</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <i class="fas fa-hospital-user text-3xl text-blue-600 mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">VisitingDoctor</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600">Services</a>
+                    <a href="doctors.html" class="text-blue-600 font-semibold">Doctors</a>
+                    <a href="appointment.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Book Appointment</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+                
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-600 hover:text-blue-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden md:hidden pb-4">
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="doctors.html" class="block py-2 text-blue-600 font-semibold">Doctors</a>
+                <a href="appointment.html" class="block py-2 text-blue-600 font-semibold">Book Appointment</a>
+                <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-blue-50 to-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Meet Our Doctors
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Experienced medical professionals dedicated to providing quality healthcare at your doorstep
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Doctors Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Doctor 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="relative mb-6">
+                        <img src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg" alt="Dr. Sarah Johnson" class="w-full h-64 object-cover rounded-lg">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                            Available
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dr. Sarah Johnson</h3>
+                    <p class="text-gray-600 mb-2">General Practitioner</p>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <span class="ml-2 text-gray-600">(150+ reviews)</span>
+                    </div>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-600"><i class="fas fa-graduation-cap mr-2 text-blue-600"></i>MBBS, MRCGP</p>
+                        <p class="text-gray-600"><i class="fas fa-clock mr-2 text-blue-600"></i>15+ years experience</p>
+                        <p class="text-gray-600"><i class="fas fa-language mr-2 text-blue-600"></i>English, French</p>
+                    </div>
+                    <a href="appointment.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Book Appointment</a>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="relative mb-6">
+                        <img src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg" alt="Dr. Michael Chen" class="w-full h-64 object-cover rounded-lg">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                            Available
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dr. Michael Chen</h3>
+                    <p class="text-gray-600 mb-2">Family Medicine</p>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                        <span class="ml-2 text-gray-600">(120+ reviews)</span>
+                    </div>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-600"><i class="fas fa-graduation-cap mr-2 text-blue-600"></i>MD, MRCGP</p>
+                        <p class="text-gray-600"><i class="fas fa-clock mr-2 text-blue-600"></i>12+ years experience</p>
+                        <p class="text-gray-600"><i class="fas fa-language mr-2 text-blue-600"></i>English, Mandarin</p>
+                    </div>
+                    <a href="appointment.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Book Appointment</a>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="relative mb-6">
+                        <img src="https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg" alt="Dr. Emily Patel" class="w-full h-64 object-cover rounded-lg">
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                            Available
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dr. Emily Patel</h3>
+                    <p class="text-gray-600 mb-2">Pediatrician</p>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <span class="ml-2 text-gray-600">(180+ reviews)</span>
+                    </div>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-gray-600"><i class="fas fa-graduation-cap mr-2 text-blue-600"></i>MBBS, MRCPCH</p>
+                        <p class="text-gray-600"><i class="fas fa-clock mr-2 text-blue-600"></i>10+ years experience</p>
+                        <p class="text-gray-600"><i class="fas fa-language mr-2 text-blue-600"></i>English, Hindi</p>
+                    </div>
+                    <a href="appointment.html" class="block text-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Specialties</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Specialty 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-heart text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">General Medicine</h3>
+                    <p class="text-gray-600 text-sm">Primary healthcare and routine check-ups</p>
+                </div>
+
+                <!-- Specialty 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-baby text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Pediatrics</h3>
+                    <p class="text-gray-600 text-sm">Specialized care for children</p>
+                </div>
+
+                <!-- Specialty 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-brain text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Neurology</h3>
+                    <p class="text-gray-600 text-sm">Nervous system disorders</p>
+                </div>
+
+                <!-- Specialty 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-lungs text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Pulmonology</h3>
+                    <p class="text-gray-600 text-sm">Respiratory system care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Doctors Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Why Choose Our Doctors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Highly Qualified</h3>
+                    <p class="text-gray-600">All our doctors are certified professionals with extensive experience</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">24/7 Availability</h3>
+                    <p class="text-gray-600">Our doctors are available round the clock for your medical needs</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-comments text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Patient-Focused</h3>
+                    <p class="text-gray-600">Dedicated to providing personalized care and attention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Meet Our Doctors?</h2>
+            <p class="text-xl text-blue-100 mb-8">Book an appointment now and get the care you deserve</p>
+            <a href="appointment.html" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+                Book Appointment
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">VisitingDoctor</h3>
+                    <p class="mb-4">Quality healthcare at your doorstep, available 24/7 for your medical needs.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white">Services</a></li>
+                        <li><a href="doctors.html" class="hover:text-white">Our Doctors</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Home Visits</a></li>
+                        <li><a href="#" class="hover:text-white">Online Consultation</a></li>
+                        <li><a href="#" class="hover:text-white">Emergency Care</a></li>
+                        <li><a href="#" class="hover:text-white">Specialist Referrals</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+441234567890" class="hover:text-white">+44 123 456 7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:info@visitingdoctor.co.uk" class="hover:text-white">info@visitingdoctor.co.uk</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            123 Healthcare Street, London, UK
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2024 VisitingDoctor.co.uk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
